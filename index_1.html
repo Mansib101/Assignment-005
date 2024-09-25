@@ -50,13 +50,15 @@
         </div>
     </header>
 
-    <main class="flex justify-center pt-14 mt-14">
-        <section class="max-w-3/4 pb-10">
+    <main id="main-section" class="flex justify-center pt-14 mt-14">
+        <!-- donation cards section -->
+        <div class="max-w-3/4 pb-10">
             <div class="flex justify-center gap-3">
-                <button class="btn mr-4 text-lg px-4">Donation</button>
-                <button class="btn ml-4 text-lg px-4">History</button>
+                <button id="card-page-btn" class="btn mr-4 text-lg px-4 bg-green">Donation</button>
+                <button id="history-page-btn" class="btn ml-4 text-lg px-4">History</button>
             </div>
             <!-- noakhali -->
+            <div id="card-section" class="">
             <div class="flex justify-center border-2 rounded-3xl mt-8 p-6 gap-4">
                 <div>
                     <img src="assets/noakhali.png" alt="">
@@ -83,6 +85,20 @@
                     </div>
                     <div>
                         <button id="nkh-btn" class="btn w-full bg-green">Donate now</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box flex flex-col text-center justify-center">
+                              <div class="text-2xl font-bold">CONGRATS!</div>
+                              <div class="mx-auto"><img src="assets/coin.png" alt=""></div>
+                              <div class="text-2xl">You have donated for humankind</div>
+                              <div class="text-2xl font-bold">Succesfully</div>
+                              <div class="modal-action">
+                                <form method="dialog">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                </form>
+                              </div>
+                            </div>
+                          </dialog>
                     </div>
                 </div>
             </div>
@@ -114,6 +130,20 @@
                     </div>
                     <div>
                         <button id="feni-btn" class="btn w-full bg-green">Donate now</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <div class="modal-box flex flex-col text-center justify-center">
+                              <div class="text-2xl font-bold">CONGRATS!</div>
+                              <div class="mx-auto"><img src="assets/coin.png" alt=""></div>
+                              <div class="text-2xl">You have donated for humankind</div>
+                              <div class="text-2xl font-bold">Succesfully</div>
+                              <div class="modal-action">
+                                <form method="dialog">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                </form>
+                              </div>
+                            </div>
+                          </dialog>
                     </div>
                 </div>
             </div>
@@ -147,10 +177,29 @@
                     </div>
                     <div>
                         <button id="quota-btn" class="btn w-full bg-green">Donate now</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <div class="modal-box flex flex-col text-center justify-center">
+                              <div class="text-2xl font-bold">CONGRATS!</div>
+                              <div class="mx-auto"><img src="assets/coin.png" alt=""></div>
+                              <div class="text-2xl">You have donated for humankind</div>
+                              <div class="text-2xl font-bold">Succesfully</div>
+                              <div class="modal-action">
+                                <form method="dialog">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                </form>
+                              </div>
+                            </div>
+                          </dialog>
                     </div>
                 </div>
             </div>
-        </section>
+            </div>
+        </div>
+        <!-- Transaction history section -->
+         <div id="history-section" class="my-4 hidden">
+         </div>
+
     </main>
     <script src="js/donate_bd.js"></script>
     <script src="js/utils.js"></script>
